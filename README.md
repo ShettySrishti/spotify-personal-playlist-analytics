@@ -63,8 +63,8 @@ Dynamic cross-filtering: AI Tree selection updates "Total Tracks" KPI (147 → 1
 | Weekly Activity Pulse | Bar chart: Most active days of week                                   |
 
 ## PowerBI Dashboard
-
-![Spotify Command Center](analytics-visuals/spotify-playlist-db.gif)
+![Dashboard Overview](analytics-visuals/dashboard-spotify-command-center.png)
+![Spotify Command Center](analytics-visuals/dashboard-spotify-command-center.gif)
 
 *Interactive "Floating Neon" dashboard with 8 synchronized visuals and filtering.*
 
