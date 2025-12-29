@@ -11,6 +11,7 @@ DIVIDE(
     SUM('dim_artist_stats'[song_count]), 
     0
 )
+```
 
 ### Why this matters
 Volume vs. Quality: A simple "Song Count" only shows how many tracks are in a playlist.
