@@ -1,5 +1,7 @@
 
-# 🎧 Spotify Advanced Analytics Command Center
+# 🎧 Spotify Playlist Analytics Command Center
+![Spotify Command Center](analytics-visuals/dashboard-spotify-command-center.gif)
+
 An end-to-end ETL pipeline that transforms raw Spotify API data into an interactive Power BI dashboard. It uses Azure Databricks (Python/PySpark/SQL) to clean and structure data into a professional Star Schema, featuring custom metrics and AI-driven insights to analyze listening habits
 
 ## Tech Stack
@@ -37,22 +39,12 @@ graph TD
 - **Search Integration**: Enabled a search bar within the Artist Slicer for instant navigation through all the tracks in the `Playlist#1`.
 
 ## Data Model (ERD)
-High-performance Star Schema with 6 Gold Layer tables:
-- Central Fact: _fact_track_breakdown_ (streams, durations, popularity)
-- Dimensions: 
-➜ _dim_artist_stats_
-➜ _dim_album_stats_  
-➜ _dim_date_dimension_
-➜ _dim_timeline_trends_
-➜ _dim_top_tier_tracks_
+Star Schema with 6 Gold Layer tables:
+- Central Fact: `_fact_track_breakdown_`
+- Dimensions: `_dim_artist_stats_`, `_dim_album_stats_`, `_dim_date_dimension_`,  `_dim_timeline_trends_`, `_dim_top_tier_tracks_`
 - Dynamic cross-filtering: AI Tree selection updates "Total Tracks" KPI (147 → 1)
 
-## Star Schema Data Model
-
 ![Star Schema Model](analytics-visuals/star-schema-model.png)
-
-*Power BI semantic model with fact_track_breakdown and 6 Delta tables relationships.*
-
 
 ## Dashboard Features
 | Feature               | Description                                                           |
@@ -62,11 +54,6 @@ High-performance Star Schema with 6 Gold Layer tables:
 | Listening Trends      | Line chart: Peak periods by month/year                                |
 | Dual Artist Metrics   | Listening Minutes vs Track Count comparison (Engagement vs Volume)    |
 | Weekly Activity Pulse | Bar chart: Most active days of week                                   |
-
-## PowerBI Dashboard
-![Spotify Command Center](analytics-visuals/dashboard-spotify-command-center.gif)
-
-*Interactive "Floating Neon" dashboard with 8 synchronized visuals and filtering.*
 
 ---
 _**Created with love for music and data 🎵**_
